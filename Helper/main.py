@@ -30,6 +30,7 @@ class ReadWriteEngine(object):
             print str(e)
 
     def Executor(self):
+        '''This method is spawing thread. No of thread is equal to number of CSV files'''
         try:
             startTime = datetime.datetime.now()
             outputFileName = const_config.OUTPUT_FILE_NAME + datetime.datetime.now().strftime("%Y_%b_%d_%H%M%S") + '.xlsx'
